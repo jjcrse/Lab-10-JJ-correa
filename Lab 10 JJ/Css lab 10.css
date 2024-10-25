@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputContainer,
+.searchContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.textField {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.textField:focus {
+    border-color: #6c63ff;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #5548d9;
+}
+
+.containterTareas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tareas {
+    flex: 1;
+    background-color: #e4e6eb;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tareas:not(:last-child) {
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.listas {
+    min-height: 150px;
+}
+
+.task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.task:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.taskButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.taskButtons button {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.taskButtons button:first-child {
+    background-color: #ffd54f;
+}
+
+.taskButtons button:last-child {
+    background-color: #81c784;
+}
+
+.taskButtons button:hover:first-child {
+    background-color: #ffca28;
+}
+
+.taskButtons button:hover:last-child {
+    background-color: #66bb6a;
+}
+
+.deleteButton {
+    background-color: #e57373;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.deleteButton:hover {
+    background-color: #ef5350;
+}

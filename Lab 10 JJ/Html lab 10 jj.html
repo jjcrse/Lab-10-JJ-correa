@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de pendientes</title>
+    <link rel="stylesheet" href="./Css lab 10.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputContainer">
+            <input type="text" id="inputText" class="textField" placeholder="Escribe tu tarea aquí...">
+            <button id="inputButton" class="button">Añadir tarea</button>
+        </div>
+
+        <div class="searchContainer">
+            <input type="text" id="searchText" class="textField" placeholder="Buscar tarea..." onkeyup="filtrarTareas()">
+        </div>
+
+        <div class="containterTareas">
+            <div id="pendientes" class="tareas">
+                <h2 class="title">Pendientes (<span id="countPendientes">0</span>)</h2>
+                <div id="listaPendiente" class="listas"></div>
+            </div>
+            <div id="haciendo" class="tareas">
+                <h2 class="title">En progreso (<span id="countEnProgreso">0</span>)</h2>
+                <div id="listaEnProgreso" class="listas"></div>
+            </div>
+            <div id="completadas" class="tareas">
+                <h2 class="title">Completado (<span id="countCompletadas">0</span>)</h2>
+                <div id="listaCompletadas" class="listas"></div>
+            </div>
+        </div>
+    </div>
+    <script src="Js lab 10 JJ.js"></script>
+</body>
+</html>
